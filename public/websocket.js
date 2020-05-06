@@ -35,3 +35,9 @@ socket.on('typing', function(data){
 message.addEventListener('keypress', function(){
     socket.emit('typing', handle.value);
 });
+
+var agario = document.getElementById('agario');
+agario.addEventListener('click',function(){
+    console.log('hey');
+    window.open("/agario.html");
+});
